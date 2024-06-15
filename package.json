@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "run:dev": "node index.js",
-    "test": "jest"
+    "test": "jest",
+    "sca": "npm audit",
+    "sast": "./node_modules/.bin/eslint .",
+    "format": "./node_modules/.bin/prettier --write ."
   },
   "author": "aoshfan",
   "license": "ISC",

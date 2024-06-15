@@ -1,3 +1,6 @@
+# Local development
+.history
+
 # Logs
 logs
 *.log

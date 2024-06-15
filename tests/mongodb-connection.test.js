@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const { MongoMemoryServer } = require('mongodb-memory-server');
+const mongoose = require("mongoose");
+const { MongoMemoryServer } = require("mongodb-memory-server");
 
-describe('Mongoose Connection', () => {
+describe("Mongoose Connection", () => {
   let mongoServer;
 
   beforeAll(async () => {
@@ -18,11 +18,11 @@ describe('Mongoose Connection', () => {
     await mongoServer.stop();
   });
 
-  it('should connect to the MongoDB database', async () => {
+  it("should connect to the MongoDB database", async () => {
     expect(mongoose.connection.readyState).toBe(1); // Connected state
   });
 
-  it('should disconnect from the MongoDB database', async () => {
+  it("should disconnect from the MongoDB database", async () => {
     await mongoose.disconnect();
     expect(mongoose.connection.readyState).toBe(0); // Disconnected state
   });

@@ -1,0 +1,23 @@
+
+
+### GET ALL
+curl -X GET \
+  http://localhost:3000/users
+
+### ADD USER
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"name": "John Doe", "email": "1.doe@example.com"}' \
+  http://localhost:3000/users
+
+
+
+### MODIFY USER
+curl -X PUT \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Jane Doe", "email": "jane.doe@example.com"}' \
+  http://localhost:3000/users/6669b2f39e34ca2c7190cd0b
+
+### DELETE USER
+curl -X DELETE \
+  http://localhost:3000/users/6669b40e9e34ca2c7190cd1b

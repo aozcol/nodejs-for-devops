@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-for-devops",
+  "version": "1.0.0",
+  "description": "this is to learn how to support NodeJS as a DevOps",
+  "main": "index.js",
+  "scripts": {
+    "run:dev": "node index.js",
+    "test": "jest"
+  },
+  "author": "aoshfan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.3.0"
+  }
+}
